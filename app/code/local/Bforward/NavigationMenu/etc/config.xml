@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Bforward_NavigationMenu
+ * @author     Bogdan Bakalov <bakalov.bogdan@gmail.com>
+ */
+ -->
+<config>
+    <modules>
+        <Bforward_NavigationMenu>
+            <version>0.1.0</version>
+        </Bforward_NavigationMenu>
+    </modules>
+    <global>
+        <models>
+            <bforward_menu>
+                <class>Bforward_NavigationMenu_Model</class>
+            </bforward_menu>
+        </models>
+        <helpers>
+            <bforward_menu>
+                <class>Bforward_NavigationMenu_Helper</class>
+            </bforward_menu>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <page_block_html_topmenu_gethtml_before>
+                <observers>
+                    <bforward_menu>
+                        <class>bforward_menu/observer</class>
+                        <method>cmsPagesToTopmenu</method>
+                    </bforward_menu>
+                </observers>
+            </page_block_html_topmenu_gethtml_before>
+        </events>
+    </frontend>
+</config>

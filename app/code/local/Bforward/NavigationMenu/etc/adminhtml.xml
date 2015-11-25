@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Bforward_NavigationMenu
+ * @author     Bogdan Bakalov <bakalov.bogdan@gmail.com>
+ */
+ -->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <bforward_menu>
+                                        <title>Bforward Navigation menu</title>
+                                    </bforward_menu>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
